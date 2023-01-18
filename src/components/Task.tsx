@@ -38,6 +38,19 @@ function Task({ index, task }: TaskProps) {
                     opacity: 1,
                 }}
             />
+            <Textarea
+                value={task.title}
+                fontWeight='semibold'
+                cursor='inherit'
+                border='none'
+                p={0}
+                resize="none"
+                minH={70}
+                maxH={200}
+                focusBorderColor="none"
+                color='gray.700'
+
+            />
         </Box>
     )
 }
