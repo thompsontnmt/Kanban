@@ -7,7 +7,7 @@ function useColumnDrop(
     handleDrop: (fromColumn: ColumnType, taskId: TaskModel['id']) => void,
 ) {
     const [{ isOver }, dropRef] = useDrop<DragItem, void, { isOver: boolean }>({
-        accept: ItemsType.TASK,
+        accept: ItemType.TASK,
         drop: (dragItem) => {
             if (!dragItem || dragItem.from === column) {
                 return;
